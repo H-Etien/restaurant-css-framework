@@ -1,0 +1,23 @@
+body{
+    height: 100vh;
+    
+    background-image: url("../image/poisson-menu.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+h1{
+
+}
+
+
+.col-ms-3{
+    background-color: rgb(233, 155, 155);
+    border: 3px solid black;
+
+}
+
+.col-3{
+    background-color: rgb(96, 217, 247);
+}
