@@ -9,24 +9,130 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+
+
     <link rel="stylesheet" href="css/menu.css">
 
     <title>Document</title>
 </head>
 <body>
     <div class="container-fluid">
+
+
         <div class="row mb-5">
             <div class="col-3 offset-5"></div>
         </div>
-        <div class="row mb-5">
-            <div class="col-3 offset-5">
-                <h1>Menu</h1>
+
+        <!-- Le Menu -->
+        <div class="row mb-4">
+            <div class="menu_cell col-5 offset-4 col-md-4 offset-md-4  text-center">
+                <h1><span class="titre_menu badge ">Menu</span></h1>
+            </div>
+        </div>
+
+        <!-- boutton ouvrir-fermer -->
+        <div class="row mb-4">
+            <!-- bouton Ouvrir -->
+            <div class="bouton_expand col-3 offset-5 col-md-2 ">   <!-- d-block d-sm-none -->
+                <!-- !!! mettre le collapsed, sinon il comprend pas que le bouton est collapsed par défaut -->
+                <button class="btn btn-primary ouvrir-fermer collapsed bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target=".collapseAll" aria-expanded="false" aria-controls="collapseAll">
+                    
+                </button> 
             </div>
         </div>
         
+        <!-- Plat -->
+        <div class="row plat mb-2">
+            
+            <!-- Entrées froides -->
+            <div class="premier_liste col-9 offset-1  col-sm-4 offset-sm-1 text-center">
+                <button class="btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target=".collapseFroid" aria-expanded="false" aria-controls="collapseFroid">
+                    <h2 class="titre_entree position-relative">Entrées froides</h2>                    
+                </button> 
+
+                <hr>
+
+                    <!-- collapseAll pour le boutton ouvrir-fermer ligne 40 et collapseFroid pour le bouton entrée ligne 47 -->
+                <div class="collapse collapseAll collapseFroid" style="padding :0px">
+
+                    <ul>
+                        <li>Saumon</li>
+                        <li>Palourde</li>
+                        <li>Coquille St-Jacques</li>
+                        <li>Crevettes</li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <!-- Entrée chaudes -->
+            <div class="deuxieme_liste col-9 offset-1  col-sm-4 offset-sm-2 text-center">
+                
+                <button class="btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target=".collapseChaud" aria-expanded="false" aria-controls="collapseChaud">
+                    <h2 class="titre_entree">Entrées chaudes</h2>
+                </button> 
+                <hr>
+
+                <div class="collapse collapseAll collapseChaud">
+                    <ul>
+                        <li>Scampis maison</li>
+                        <li>Scampi à l'ail</li>
+                        <li>Croquettes de crevettes</li>
+                        <li>Calamar frits</li>
+                        <li>Fourneau de fruits de mer</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        
         <div class="row mb-5">
-            <div class="col-3 offset-sm-2">
-                ok
+            <div class="liste_plat col-8 offset-2 text-center">
+                <button class="btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target=".collapsePlat" aria-expanded="false" aria-controls="collapsePlat">
+                    <h2 class="titre_entree">Menu Principal</h2>
+                </button> 
+                <hr>
+
+                <div class="collapse collapseAll collapsePlat">
+                    <ul class="plat_column">
+                        <li>Salade d'huître</li>
+                        <li>Homard Royale</li>
+                        <li>Quatre Crabes</li>
+                        <li>Poêle de crevettes</li>
+                        <li>Sole doré</li>
+                        <li>Saumon frit garni</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-1">
+                <div class="navbar fixed-bottom navbar-dark bg-dark justify-content-center">
+                    <ul class="nav nav-tabs">
+    
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="pictures.html">Picture</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="restaurants.html">Restaurant</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+    
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

@@ -1,3 +1,5 @@
+
+
 body{
     height: 100vh;
     
@@ -7,17 +9,126 @@ body{
     background-size: cover;
 }
 
-h1{
+/* menu */
+
+.titre_menu{
+    color: inherit;
+    text-underline-offset: var(--offset, 0.2em);
+    text-decoration: underline 0.15em;
+    transition: all 1800ms;
+    background-color: transparent;
+}
+
+.titre_menu:hover,
+.titre_menu:focus {
+    --offset: 0.4em;
+    text-decoration-color: orange;
+    background-color: black;
+}
+
+.menu_cell > *{
+    width: 100%;
+    font-size: 5rem;
+    border: 10px double rgb(26, 81, 235);
+}
+
+
+
+
+.plat > div{
+    margin-bottom: 10%;
+}
+
+/* bouton */
+
+.bouton_expand > * {
+    width: 100%;
+    padding: 10px 0;
+}
+
+button.ouvrir-fermer:before{
+    content:'fermer';
+}
+
+button.ouvrir-fermer.collapsed:before
+{
+    content:'ouvrir' ;
+}
+
+
+
+/* Entrée */
+
+
+.premier_liste{
+    box-shadow: 
+    7px 7px 0px 1px white
+    , 7px 7px 0px 4px rgba(73, 89, 231, 0.8);
+}
+
+.deuxieme_liste{
+    box-shadow: 
+    7px 7px 0px 1px white
+    , 7px 7px 0px 4px rgba(231, 149, 73, 0.8);
 
 }
 
 
-.col-ms-3{
-    background-color: rgb(233, 155, 155);
-    border: 3px solid black;
+
+.titre_entree{
+    font-family: gabriola;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+ul{
+    font-family: comic sans;
+    font-size: 1.3rem;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+    font-style: italic;
+    text-shadow: 0.7px 0.7px 0 white;
+}
+
+/* premier liste */
+.premier_liste {
+    background-color: rgba(63, 139, 226, 0.50);
+}
+
+
+/* deuxieme liste */
+.deuxieme_liste{
+    background-color: rgba(241, 215, 97, 0.5);
+}
+
+
+/* liste plat */
+.liste_plat{
+    background-color: rgba(30, 26, 224, 0.5);
+
+    box-shadow: 
+    7px 7px 0px 1px white
+    , 7px 7px 0px 4px rgba(236, 60, 60, 0.8);
 
 }
 
-.col-3{
-    background-color: rgb(96, 217, 247);
+h2{
+    text-shadow: 2px 2px 0 rgb(0, 204, 255);
 }
+
+.plat_column{
+    columns: 2;
+}
+
+/* .collapse.show{
+    background-color: red;
+}
+
+.collapsing{
+    background-color: blue;
+} */
