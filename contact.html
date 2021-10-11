@@ -4,13 +4,95 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contact.css">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
-    <title>Document</title>
+    <title>Contact</title>
 </head>
 <body>
+    <div class="container-fludid">
+        <form>
+            <div class="row">
+              <div class="col-10 col-sm-4 offset-1">
+                <label for="nom">Nom</label>
+                <input type="text" class="form-control" placeholder="Nom">
+              </div>
+              <div class="col-10 col-sm-4 offset-1">
+                <label for="prenom">Prénom</label>
+                <input type="text" class="form-control" placeholder="Prénom">
+              </div>
+            </div>
+
+            <div class="row">
+                <div class="col-10 col-sm-9 offset-1">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="mail" placeholder="Email">
+                  </div>
+            </div>
+
+            <div class="row mb-3 choix">
+                <div class="col-10 col-sm-9 offset-1">
+                    <label for="contact">Contact</label>
+                    <select class="form-select" aria-label="contact-select" title="Pourquoi voulez-vous nous contacter ?">
+                        <option value="avis">Donnez votre avis</option>
+                        <option value="info">Demande d'information</option>
+                        <option value="idee">Donnez des idées de menus</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row mb-2">
+                <div class="col-10 col-sm-9 offset-1">
+                    <div class="md-form">
+                        <label for="form">Commentaire</label>
+                        <textarea id="form10" class="md-textarea form-control" rows="3"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-3 offset-4 submit-button">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="far fa-envelope"></i>
+                        Envoyer
+                    </button>
+                </div>
+            </div>
+
+
+
+          </form>
+
+          
+        <div class="row footer">
+            <div class="col-sm-1">
+                <div class="navbar fixed-bottom navbar-dark bg-dark justify-content-center">
+                    <ul class="nav nav-tabs">
     
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="pictures.html">Picture</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="restaurants.html">Restaurant</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+    
+                    </ul>
+                </div>
+            </div>         
+        </div>
+    </div>
 </body>
 </html>

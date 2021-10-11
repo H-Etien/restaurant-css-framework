@@ -1,9 +1,9 @@
 
 
 body{
-    height: 100vh;
+    height: 200vh;
     
-    background-image: url("../image/poisson-menu.jpg");
+    background-image: url("../image/bg-left-fish.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -13,22 +13,16 @@ body{
 
 .titre_menu{
     color: inherit;
-    text-underline-offset: var(--offset, 0.2em);
-    text-decoration: underline 0.15em;
-    transition: all 1800ms;
+
     background-color: transparent;
+    font-family: ink free;
+    font-size: 3rem;
 }
 
-.titre_menu:hover,
-.titre_menu:focus {
-    --offset: 0.4em;
-    text-decoration-color: orange;
-    background-color: black;
-}
 
 .menu_cell > *{
     width: 100%;
-    font-size: 5rem;
+    font-size: 300%;
     border: 10px double rgb(26, 81, 235);
 }
 
@@ -117,13 +111,44 @@ li{
 
 }
 
-h2{
+h2.froid{
     text-shadow: 2px 2px 0 rgb(0, 204, 255);
+}
+
+h2.chaud{
+    text-shadow: 2px 2px 0 rgb(164, 243, 91);
+}
+
+h2.principal{
+    text-shadow: 2px 2px 0 rgb(78, 56, 56);
 }
 
 .plat_column{
     columns: 2;
 }
+
+.titre_menu{
+    display: block;
+    padding: 0;
+}
+
+
+@media (max-width:460px){
+
+    body{
+        height: 230vh;
+    }
+
+    .cell_food li{
+        height: 80px;
+    }
+
+    .cell_entree li{
+        height: 40px;
+    }
+}
+
+
 
 /* .collapse.show{
     background-color: red;

@@ -14,7 +14,7 @@
 
     <link rel="stylesheet" href="css/menu.css">
 
-    <title>Document</title>
+    <title>Menu</title>
 </head>
 <body>
     <div class="container-fluid">
@@ -48,7 +48,7 @@
             <!-- Entrées froides -->
             <div class="premier_liste col-9 offset-1  col-sm-4 offset-sm-1 text-center">
                 <button class="btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target=".collapseFroid" aria-expanded="false" aria-controls="collapseFroid">
-                    <h2 class="titre_entree position-relative">Entrées froides</h2>                    
+                    <h2 class="titre_entree position-relative froid">Entrées froides</h2>                    
                 </button> 
 
                 <hr>
@@ -56,7 +56,7 @@
                     <!-- collapseAll pour le boutton ouvrir-fermer ligne 40 et collapseFroid pour le bouton entrée ligne 47 -->
                 <div class="collapse collapseAll collapseFroid" style="padding :0px">
 
-                    <ul>
+                    <ul class="cell_entree">
                         <li>Saumon</li>
                         <li>Palourde</li>
                         <li>Coquille St-Jacques</li>
@@ -71,12 +71,12 @@
             <div class="deuxieme_liste col-9 offset-1  col-sm-4 offset-sm-2 text-center">
                 
                 <button class="btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target=".collapseChaud" aria-expanded="false" aria-controls="collapseChaud">
-                    <h2 class="titre_entree">Entrées chaudes</h2>
+                    <h2 class="titre_entree chaud">Entrées chaudes</h2>
                 </button> 
                 <hr>
 
                 <div class="collapse collapseAll collapseChaud">
-                    <ul>
+                    <ul class="cell_entree">
                         <li>Scampis maison</li>
                         <li>Scampi à l'ail</li>
                         <li>Croquettes de crevettes</li>
@@ -89,14 +89,14 @@
         </div>
         
         <div class="row mb-5">
-            <div class="liste_plat col-8 offset-2 text-center">
+            <div class="liste_plat col-9 offset-1 col-sm-8 offset-sm-2 col-md-8 offset-md-2 text-center">
                 <button class="btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target=".collapsePlat" aria-expanded="false" aria-controls="collapsePlat">
-                    <h2 class="titre_entree">Menu Principal</h2>
+                    <h2 class="titre_entree principal">Menu Principal</h2>
                 </button> 
                 <hr>
 
                 <div class="collapse collapseAll collapsePlat">
-                    <ul class="plat_column">
+                    <ul class="plat_column cell_food">
                         <li>Salade d'huître</li>
                         <li>Homard Royale</li>
                         <li>Quatre Crabes</li>
@@ -109,7 +109,7 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row footer">
             <div class="col-sm-1">
                 <div class="navbar fixed-bottom navbar-dark bg-dark justify-content-center">
                     <ul class="nav nav-tabs">
@@ -133,7 +133,7 @@
     
                     </ul>
                 </div>
-            </div>
+            </div>         
         </div>
     </div>
 </body>

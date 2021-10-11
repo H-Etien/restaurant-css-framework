@@ -1,0 +1,13 @@
+body{
+    height: 120vh;
+
+    background-image: url("../image/bg-top-fish.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+iframe{
+    width: 100%;
+}

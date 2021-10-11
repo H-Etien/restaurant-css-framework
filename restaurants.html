@@ -4,13 +4,93 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/restaurants.css">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
-    <title>Document</title>
+    <title>Restaurant</title>
 </head>
 <body>
+    <div class="container-fluid">
+        <div class="row mb-5">
+            <div class="jumbotron bg-primary text-white text-center">
+                <h1>Restaurant Mer'veille</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-10 offset-1">
+                <table class="table table-dark">
+                    <thead>
+                      <tr>
+                        <th scope="col" colspan="3" style="text-align:center !important">
+                            Retrouvez tous nos restaurants
+                        </th>
+                      </tr>
+                      <tr>
+                          <th>Restaurant</th>
+                          <th>Adresse</th>
+                          <th>Heures d'ouvertures</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+
+
+                      <tr>
+                        <td>St-Martin</td>
+                        <td>Rue des thons 34, Ixelles</td>
+                        <td>12-23h</td>
+                      </tr>
+                      <tr>
+                        <td>Jacob</td>
+                        <td>Grand-Place 77, Bruxelles</td>
+                        <td>11-1h</td>
+                      </tr>
+                      <tr>
+                        <td>Larry Marin</td>
+                        <td>Mollenstraat 22, Anderlecth</td>
+                        <td>12-23h</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-8 offset-2">
+                <iframe src="https://maps.google.com/maps?q=Bruxelles,%20Grand-Place&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0"></iframe>
+            </div>
+        </div>
+
+        <div class="row footer mb-5">
+            <div class="col-sm-1">
+                <div class="navbar fixed-bottom navbar-dark bg-dark justify-content-center">
+                    <ul class="nav nav-tabs">
     
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="pictures.html">Picture</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="restaurants.html">Restaurant</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+    
+                    </ul>
+                </div>
+            </div>         
+        </div>
+
+    </div>
 </body>
 </html>

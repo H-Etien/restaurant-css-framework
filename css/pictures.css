@@ -1,0 +1,19 @@
+body{
+    background-image: url("../image/bg-right-fish.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+h1{
+    text-align: center;
+}
+
+.img-thumbnail{
+    margin: 5%;
+}
+
+li{
+    color: violet;
+}

@@ -1,0 +1,33 @@
+body{
+
+    height: 120vh;
+
+    background-image: url(../image/bg-right-small-fish.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+label{
+    color: rgb(193, 227, 243);
+}
+
+.choix{
+    margin-top: 5% !important;
+    align-items: center;
+    align-content: center;
+}
+
+.btn{
+    width: 100%;
+}
+
+.submit-button{
+    justify-content: center;
+}
+
+.navbar{
+    position: absolute;
+    bottom: 0;
+}
